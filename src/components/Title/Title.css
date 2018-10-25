@@ -1,0 +1,22 @@
+.titlebox {
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/30/53/colorful-music-background-vector-19343053.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 280px;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Amaranth', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    margin-bottom: 20px;
+}
+
+.titlebox h1 {
+    margin-top: 90px;
+    font-size: 3.5em;
+}
+
+.titlebox p {
+    font-size: 1.8em;
+}
