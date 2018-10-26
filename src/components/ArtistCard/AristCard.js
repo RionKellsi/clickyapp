@@ -6,8 +6,8 @@ import "./ArtistCard.css";
 const ArtistCard = props => (
     <div className="card">
         <div className="img-container">
-            <a onClick={() => props.selectArtist(props.artist)}
-                className={props.curScore === 0 ? "style_prevu_kit style_prevu_kit_ex" : "style_prevu_kit"}
+            <a onClick={() => props.shuffleArtists(props.artist)}
+                className={props.score === 0 ? "style_prevu_kit style_prevu_kit_ex" : "style_prevu_kit"}
                 >
                     <img alt={props.artist} src={props.image} />
                 </a>

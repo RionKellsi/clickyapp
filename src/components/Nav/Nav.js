@@ -5,7 +5,7 @@ const Navtab = props => (
     <div>
         <ul className="nav na-tab nav-justified">
             <li><a href="/">Music Artist Clicky Game</a></li>
-            <li 
+            {/* <li 
                 className={props.message.indexOf('incorrectly') !== -1 ?
                     "desc-incorrect" : 
                     props.message.indexOf('correctly') !== -1 ?
@@ -13,7 +13,7 @@ const Navtab = props => (
                         "desc-normal"} >
 
                             {props.message}
-                        </li>
+                        </li> */}
 
                         <li>Score: <span style={{color: "pink"}}>{props.curScore}</span></li>
         </ul>
