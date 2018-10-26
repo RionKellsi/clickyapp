@@ -17,11 +17,11 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.setState({ artists: this.shuffleArtists(this.state.artists) });
-
+    // this.setState({ artists: this.shuffleArtists(this.state.artists) });
+    this.shuffleArtists()
   };
 
-  shuffleArtists = artists => {
+  shuffleArtists= () => {
     let i = artists.length - 1;
     while (i > 0) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -30,7 +30,8 @@ class App extends Component {
       artists[j] = temp;
       i--;
     }
-    return artists;
+    // return artists;
+    this.setState({artists: artists})
   };
 
 
@@ -79,6 +80,7 @@ class App extends Component {
 
   render() {
     return (
+      <div>
       <Wrapper>
 
         <Navtab
@@ -94,6 +96,7 @@ class App extends Component {
             image={artists.image}
             key={artists.id}
             id={artists.id}
+            shuffleArtists={this.shuffleArtists}
             shake={!this.state.score && this.state.topScore}
             handleClick={this.handleItemClick}
           />
@@ -101,7 +104,7 @@ class App extends Component {
         }
 
       </Wrapper>
-
+      </div>
     );
   }
   
