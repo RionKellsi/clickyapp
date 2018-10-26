@@ -3,7 +3,7 @@ import "./Nav.css";
 
 const Navtab = props => (
     <div>
-        <ul className="nav na-tab nav-justified">
+        <ul className="nav nav-tab nav-justified">
             <li><a href="/">Music Artist Clicky Game</a></li>
             {/* <li 
                 className={props.message.indexOf('incorrectly') !== -1 ?
@@ -15,7 +15,7 @@ const Navtab = props => (
                             {props.message}
                         </li> */}
 
-                        <li>Score: <span style={{color: "pink"}}>{props.curScore}</span></li>
+                        <li>Score: <span style={{color: "yellow"}}>{props.score}</span></li>
         </ul>
     </div>
 );

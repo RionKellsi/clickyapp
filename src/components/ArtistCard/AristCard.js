@@ -1,8 +1,6 @@
 import React from "react";
 import "./ArtistCard.css";
 
-
-
 const ArtistCard = props => (
     <div className="card">
         <div className="img-container">
