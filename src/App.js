@@ -17,7 +17,6 @@ class App extends Component {
   };
 
   componentDidMount() {
-    // this.setState({ artists: this.shuffleArtists(this.state.artists) });
     this.shuffleArtists()
   };
 
@@ -30,7 +29,6 @@ class App extends Component {
       artists[j] = temp;
       i--;
     }
-    // return artists;
     this.setState({artists: artists})
   };
 
